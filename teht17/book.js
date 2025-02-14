@@ -13,12 +13,7 @@ const book={
 
     getOneBook(id)
     {
-        const book = this.bookArray.find(b => b.id_book === id);
-        if (book) {
-            console.log(book);
-        } else {
-            console.log("Kirjaa ei löytynyt");
-        }
+        console.log(this.bookArray[id-1]);
     },
 
     addBook(id_book, name, author, isbn)
